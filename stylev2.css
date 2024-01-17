@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #f9f6f2; /* Light beige background */
+    color: #555;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.menu-bar {
+    background-color: rgba(68, 44, 46, 0.8); /* Dark burgundy with 80% transparency */
+    padding: 15px 0;
+}
+
+.menu-bar h1 {
+    margin: 0;
+    color: #fff; /* White text */
+    font-family: 'Playfair Display', serif; /* Fancy serif font */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+    font-family: 'Playfair Display', serif; /* Use the same serif font as the header */
+}
+
+nav ul li a:hover {
+    color: #ffcccb; /* Light pink on hover */
+}
+
+.about-me,
+.projects,
+.contact {
+    padding: 40px 0;
+}
+
+.projects .project {
+    margin-bottom: 30px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #442c2e; /* Deep burgundy */
+    color: #fff;
+}
+
+/* Add some styling to the content sections for a more elegant look */
+
+.about-me p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.projects h2,
+.contact h2 {
+    font-size: 28px;
+    color: #442c2e; /* Deep burgundy */
+}
+
+.projects .project p {
+    font-size: 16px;
+    color: #555;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #555;
+}
