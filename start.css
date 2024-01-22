@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+}
+
+#myVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.content {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.content h1 {
+  top: 15%;
+  left: 50%;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 18px;
+}
+
+.links{
+  position: absolute;
+  top:7.5%;
+  font-size: 18px;
+}
+
+#firstLink{
+  position: absolute;
+  left: 10%;
+  top:4%;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+#secondLink{
+  position: absolute;
+  left: 50%;
+  top:4%;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+#thirdLink{
+  position: absolute;
+  right: 10%;
+  top:4%;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+.headerv{
+  position: absolute;
+  height: 10%;
+  text-align: center;
+  background: #464646;
+  color: white;
+  font-size: 30px;
+  width: 100%;
+  opacity: 0.95;
+}
+/*
+
+
+.content a{
+  pass
+}
+
+
