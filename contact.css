@@ -6,9 +6,11 @@
 
 body {
     background-image: url('blur.png');
-    background-size: cover; /* Adjusts the background image to cover the entire element */
-    background-repeat: no-repeat; /* Prevents the background image from repeating */
-    background-position: center; /* Centers the background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-align: center;
   }
 
   .container {
@@ -26,6 +28,7 @@ body {
     background: #005881;
     color: white;
     opacity: 0.6;
+    text-align: left;
 }
 
 html, body {
@@ -34,4 +37,7 @@ html, body {
     margin: 0;
     padding: 0;
   }
-  
+
+ul {
+    list-style-type: none; /* Remove bullets from unordered list */
+}
