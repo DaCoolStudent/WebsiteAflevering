@@ -12,7 +12,7 @@ body {
 
 
 #contact{
-    position: fixed;
+    position: absolute;
     bottom: 0;
     height: 10%;
     width: 100%;
