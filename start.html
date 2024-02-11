@@ -1,31 +1,82 @@
-<html>
-    <head>
-      <link rel="stylesheet" type="text/css" href="start.css">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="start.css">
+  <style>
+    body {
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+    }
 
-    <!-- The video -->
-    <video autoplay muted loop id="myVideo">
-      <source src="moonVideo.mp4" type="video/mp4">
+    /* Style for the video container */
+    #myVideo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; /* Place the video behind other elements */
+    }
+
+    /* Style for the navigation links */
+    .navigation {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+      padding: 10px 0; /* Add padding for better readability */
+      display: flex;
+      justify-content: center; /* Center align the links */
+      z-index: 1; /* Ensure links are above the video */
+    }
+
+    .navigation a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+
+    /* Style for the content */
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- The video -->
+  <video autoplay muted loop id="myVideo">
+    <source src="moonVideo.mp4" type="video/mp4">
   </video>
-  <div class="headerv">
-    <p></p>
-  </div>
-  <div>
-    <a id="firstLink" href="about.html">about us</a>
+
+  <!-- Navigation links -->
+  <div class="navigation">
+    <a id="firstLink" href="about.html">About Us</a>
     <a id="secondLink" href="contact.html">Booking</a>
-    <a id="thirdLink" href="prev.html">Prevuis excperiences</a>
+    <a id="thirdLink" href="prev.html">Previous experiences</a>
   </div>
-  <!-- Optional: some overlay text to describe the video -->
+
+  <!-- Content -->
   <div class="content">
-    <h1>Voyage</h1>
-    <p>The galtic experince</p>
-    <p></p>
-</div>
-<script>
-  
-  var video = document.getElementById("myVideo");
-  video.playbackRate = 0.8;
-</script>
-    </body>
+    <h1>Voyager</h1>
+    <p>The Galactic experience</p>
+  </div>
+
+  <script>
+    var video = document.getElementById("myVideo");
+    video.playbackRate = 0.8;
+  </script>
+</body>
 </html>
